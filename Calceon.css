@@ -1,0 +1,22 @@
+/* MARK: variables
+*/
+:root {
+  --background-color: #000000;
+  --text-color: white;
+
+  scroll-behavior: smooth;
+}
+
+/* MARK: general
+*/
+* {
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color-scheme: dark;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  background-color: var(--background-color);
+}

@@ -13,6 +13,6 @@ async function loadHTML(id, file) {
 // Load all parts
 window.addEventListener('DOMContentLoaded', () => {
   //loadHTML('header', 'header.html');
-  loadHTML('test', 'test.html');
+  loadHTML('navbar', 'navbar.html');
   //loadHTML('footer', 'footer.html');
 });
