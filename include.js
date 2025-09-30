@@ -6,13 +6,13 @@ async function loadHTML(id, file) {
     document.getElementById(id).innerHTML = text;
   } catch (err) {
     console.error(err);
-    document.getElementById(id).innerHTML = `<p>Error loading ${file}</p>`;
+    document.getElementById(id).innerHTML = `Error loading ${file}`;
   }
 }
 
 // Load all parts
 window.addEventListener('DOMContentLoaded', () => {
   //loadHTML('header', 'header.html');
-  loadHTML('navbar', 'navbar.html');
+  loadHTML('navbar', 'partials/navbar.html');
   //loadHTML('footer', 'footer.html');
 });
