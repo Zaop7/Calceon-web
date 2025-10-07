@@ -122,6 +122,18 @@ img {
   -webkit-tap-highlight-color: transparent;
 }
 
+/*MARK: download button
+*/
+.download_button {
+  padding: 15px 30px;
+  font-size: 15px;
+}
+
+.download_button:hover {
+  background-color: color-mix(in srgb, magenta 100%, transparent);
+  box-shadow: 0 0 10px 0px color-mix(in srgb, magenta 100%, transparent);
+}
+
 /*MARK: pagetop
 */
 
