@@ -40,6 +40,17 @@ img {
   user-select: none;
 }
 
+video{
+  pointer-events: none;
+  user-select: none;
+  max-width: 60vh;
+  height: auto;
+  border-width: 2px;
+  border-radius: var(--nav-border-radius);
+  border-style: solid;
+  border-color: color-mix(in srgb, white 50%, transparent);
+}
+
 /*MARK: navigation
 */
 
@@ -202,4 +213,11 @@ h1 {
 
 p {
   color: magenta;
+}
+
+.gameplay_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* optional spacing */
 }
