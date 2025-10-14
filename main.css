@@ -40,15 +40,12 @@ img {
   user-select: none;
 }
 
-video{
-  pointer-events: none;
+video {
   user-select: none;
-  max-width: 60vh;
+  max-width: min(100%, 50vw);
   height: auto;
-  border-width: 2px;
-  border-radius: var(--nav-border-radius);
-  border-style: solid;
-  border-color: color-mix(in srgb, white 50%, transparent);
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0px color-mix(in srgb, white 30%, transparent);
 }
 
 /*MARK: navigation
@@ -209,6 +206,7 @@ h2 {
 h1 {
   padding-top: 10vh;
   font-size: 25px;
+  text-align: center;
 }
 
 p {
