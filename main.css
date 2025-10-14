@@ -48,6 +48,13 @@ video {
   box-shadow: 0 0 20px 0px color-mix(in srgb, white 30%, transparent);
 }
 
+.gameplay_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
 /*MARK: navigation
 */
 
@@ -211,11 +218,4 @@ h1 {
 
 p {
   color: magenta;
-}
-
-.gameplay_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px; /* optional spacing */
 }
