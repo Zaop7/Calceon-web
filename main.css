@@ -55,6 +55,13 @@ video {
   margin-top: 40px;
 }
 
+.download_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
 /*MARK: navigation
 */
 
@@ -146,6 +153,12 @@ video {
 .download_button {
   padding: 15px 30px;
   font-size: 15px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.download_button:hover {
+  transform: scale(1.05);
 }
 
 
