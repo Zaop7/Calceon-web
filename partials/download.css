@@ -1,0 +1,21 @@
+#download>div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+#download .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 15px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+#download .button .icon {
+  height: auto;
+}

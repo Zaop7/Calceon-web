@@ -1,0 +1,57 @@
+.contact_section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px
+}
+
+.contact_card {
+  --bg-color: black;
+  /* výchozí */
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: color-mix(in srgb, white 20%, transparent);
+  padding: 1.5em;
+  width: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* PC */
+@media (pointer: fine) {
+  .contact_card:hover {
+    background-color: color-mix(in srgb, var(--bg-color) 100%, transparent);
+    box-shadow: 0 0 10px 0px color-mix(in srgb, white 30%, transparent);
+  }
+}
+
+/* Mobile */
+@media (pointer: coarse) {
+  .contact_card:active {
+    background-color: color-mix(in srgb, var(--bg-color) 100%, transparent);
+    box-shadow: 0 0 10px 0px color-mix(in srgb, white 30%, transparent);
+  }
+}
+
+.contact_card .avatar {
+  width: 8em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.contact_card[data-person="Probot"] {
+  --bg-color: rgb(91, 17, 126);
+}
+
+.contact_card[data-person="Zaop"] {
+  --bg-color: rgb(32, 58, 46);
+}

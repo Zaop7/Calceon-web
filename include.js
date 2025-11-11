@@ -6,13 +6,15 @@ async function loadHTML(id, file) {
     document.getElementById(id).innerHTML = text;
   } catch (err) {
     console.error(err);
-    document.getElementById(id).innerHTML = `Error loading ${file}`;
+    document.getElementById(id).innerHTML = `<h1 style="color: red">Error loading ${file}</h1>`;
   }
 }
 
 // Load all parts
 window.addEventListener('DOMContentLoaded', () => {
-  //loadHTML('header', 'header.html');
-  loadHTML('navbar', 'partials/navbar.html');
-  //loadHTML('footer', 'footer.html');
+  loadHTML('nav', '/partials/navigation.html');
+  loadHTML('landing', '/partials/landing.html');
+  loadHTML('gameplay', '/partials/gameplay.html');
+  loadHTML('download', '/partials/download.html');
+  loadHTML('links', '/partials/links.html');
 });

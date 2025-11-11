@@ -1,0 +1,37 @@
+#landing {
+  /*background-image: url("/imgs/background/stone.png");*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  filter: drop-shadow(0 0 10px color-mix(in srgb, white 50%, transparent));
+  user-select: none;
+}
+
+#landing .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(0%, -25%);
+}
+
+#landing .logo img {
+  max-width: min(75vw, 100%);
+  height: auto;
+}
+
+#landing .arrow {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  height: auto;
+  cursor: pointer;
+  animation: bounce 4s infinite;
+}
+
+#landing .arrow>img {
+  width: 50px;
+}

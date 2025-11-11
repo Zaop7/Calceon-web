@@ -1,0 +1,12 @@
+#gameplay>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#gameplay video {
+  max-width: min(100%, 75vw);
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0px color-mix(in srgb, white 30%, transparent);
+}
