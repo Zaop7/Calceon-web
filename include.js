@@ -12,9 +12,9 @@ async function loadHTML(id, file) {
 
 // Load all parts
 window.addEventListener('DOMContentLoaded', () => {
-  loadHTML('nav', '/partials/navigation.html');
-  loadHTML('landing', '/partials/landing.html');
-  loadHTML('gameplay', '/partials/gameplay.html');
-  loadHTML('download', '/partials/download.html');
-  loadHTML('devs', '/partials/devs.html');
+  loadHTML('nav', 'partials/navigation.html');
+  loadHTML('landing', 'partials/landing.html');
+  loadHTML('gameplay', 'partials/gameplay.html');
+  loadHTML('download', 'partials/download.html');
+  loadHTML('devs', 'partials/devs.html');
 });
