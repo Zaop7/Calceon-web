@@ -17,7 +17,7 @@
 }
 
 #landing .logo {
-  z-index: 1;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,6 @@
   animation: spin 12s linear infinite;
 }
 
-
 .orbit {
   position: absolute;
   top: 46%;
@@ -56,14 +55,18 @@
   z-index: 0;
 }
 
-.orbiter {
+.orbit>img {
+  --radius: 0px;
+  --angle: 0deg;
+  --opacity: 1;
+  --speed: 1;
   position: absolute;
   width: 50px;
   height: 50px;
   transform-origin: center;
-  opacity: var(--opacity, 1);
+  opacity: var(--opacity);
   transform: rotate(var(--angle)) translateX(var(--radius));
-  animation: orbit-spin 60s linear infinite;
+  animation: orbit-spin calc(60s / var(--speed)) linear infinite;
 }
 
 @keyframes orbit-spin {
@@ -72,6 +75,7 @@
 }
 
 #landing .arrow {
+  z-index: 11;
   position: absolute;
   bottom: 15%;
   left: 50%;
@@ -86,9 +90,24 @@
   width: 50px;
 }
 
+@keyframes orbit-spin {
+  0% {
+    transform: rotate(var(--angle)) translateX(var(--radius));
+  }
+
+  100% {
+    transform: rotate(calc(360deg + var(--angle))) translateX(var(--radius));
+  }
+}
+
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes bounce {
