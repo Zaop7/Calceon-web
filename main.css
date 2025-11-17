@@ -118,23 +118,5 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-}
-
-/*MARK: animations
-*/
-
-@keyframes bounce {
-
-  0%,
-  50% {
-    transform: translate(-50%, 0);
-  }
-
-  80% {
-    transform: translate(-50%, 50%);
-  }
-
-  92% {
-    transform: translate(-50%, -10%);
-  }
+  margin: 0px 7.5vw;
 }
