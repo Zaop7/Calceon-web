@@ -8,12 +8,18 @@
   user-select: none;
 }
 
+#landing>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(0%, -25%);
+}
+
 #landing .logo {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate(0%, -25%);
   filter: drop-shadow(0 0 10px color-mix(in srgb, white 50%, transparent));
 }
 
@@ -57,4 +63,20 @@
 
 #landing .arrow>img {
   width: 50px;
+}
+
+@keyframes bounce {
+
+  0%,
+  50% {
+    transform: translate(-50%, 0);
+  }
+
+  80% {
+    transform: translate(-50%, 50%);
+  }
+
+  92% {
+    transform: translate(-50%, -10%);
+  }
 }
