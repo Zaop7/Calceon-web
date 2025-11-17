@@ -13,9 +13,10 @@
   align-items: center;
   text-align: center;
   -webkit-tap-highlight-color: transparent;
+  color: #999999;
 }
 
-#devs .button .avatar {
+#devs .button>img {
   width: 8em;
   max-width: 100%;
   border-radius: 50%;
@@ -23,10 +24,10 @@
   margin-bottom: 10px;
 }
 
-#devs .button[data-person="Probot"] {
+#devs .button[dev="Probot"] {
   --button-background-color-hover: rgb(91, 17, 126);
 }
 
-#devs .button[data-person="Zaop"] {
+#devs .button[dev="Zaop"] {
   --button-background-color-hover: rgb(32, 58, 46);
 }
