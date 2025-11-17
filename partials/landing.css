@@ -28,26 +28,28 @@
   height: auto;
 }
 
-#landing .bg-image {
+#landing .background {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   width: 400px;
-  max-width: 50vw;
-  transform: translate(-50%, -50%);
+  max-width: 90vw;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 50%;
   border-radius: 50%;
-  mask-image: radial-gradient(black 0%, transparent 60%);
-  
-  /* SPIN ANIMATION */
+  transform: translate(-50%, -55%);
+  mask-image: radial-gradient(black 0%, transparent 65%);
+  overflow: hidden;
+}
+
+#landing .background>img {
   animation: spin 20s linear infinite;
 }
 
 /* ANIMATIONS */
 @keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 #landing .arrow {

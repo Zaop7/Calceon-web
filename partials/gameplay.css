@@ -1,7 +1,7 @@
 #gameplay > div{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
   margin: 0 auto;
   max-width: 50vw;
 }
