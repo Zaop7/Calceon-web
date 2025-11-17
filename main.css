@@ -48,10 +48,6 @@ h2 {
   margin: 0px;
 }
 
-p {
-  color: magenta;
-}
-
 img {
   pointer-events: none;
   user-select: none;
