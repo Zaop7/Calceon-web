@@ -41,7 +41,7 @@
   }
 
   #gameplay .row {
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     align-items: center;
     text-align: center;
   }
