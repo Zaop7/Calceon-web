@@ -33,8 +33,9 @@ a {
 }
 
 h1 {
-  padding-top: 10vh;
-  font-size: 25px;
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  font-size: 30px;
   text-align: center;
 }
 
