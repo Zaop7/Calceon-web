@@ -16,5 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
   loadHTML('landing', '/partials/landing.html');
   loadHTML('gameplay', '/partials/gameplay.html');
   loadHTML('download', '/partials/download.html');
-  loadHTML('links', '/partials/links.html');
+  loadHTML('devs', '/partials/devs.html');
 });
