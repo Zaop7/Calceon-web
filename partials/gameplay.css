@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 900px) {
+  #gameplay > div {
+    max-width: 75vw;
+  }
+
   #gameplay .row {
     flex-direction: column !important;
     align-items: center;
