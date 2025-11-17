@@ -1,10 +1,3 @@
-#devs>div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
 #devs .button {
   padding: 1.5em 2em;
   width: 10em;

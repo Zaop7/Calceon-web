@@ -82,8 +82,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 4px 10px;
-  margin-left: 10px;
-  margin-top: 10px;
   border-style: solid;
   border-radius: 12px;
   border-width: 2px;
@@ -117,6 +115,13 @@ footer {
   padding: 0px 15px 0px 0px;
   width: 3em;
   vertical-align: middle;
+}
+
+.button_row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /*MARK: animations
