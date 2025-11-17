@@ -43,7 +43,7 @@
 }
 
 #landing .background>img {
-  animation: spin 20s linear infinite;
+  animation: spin 8s linear infinite;
 }
 
 /* ANIMATIONS */
