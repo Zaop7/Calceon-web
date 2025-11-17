@@ -3,6 +3,7 @@
 :root {
   --background-color: black;
   --text-color: white;
+  --text-color-dim: #999999;
   --text-size: 15px;
   --font-weight: 500; /*100-800*/
   --blur-effect: 10px;
@@ -65,7 +66,13 @@ video {
 }
 
 footer {
-  height: 30vh;
+  margin-top: 25vh;
+  margin-bottom: 3em;
+  color: var(--text-color-dim);
+  font-size: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 /*MARK: button
